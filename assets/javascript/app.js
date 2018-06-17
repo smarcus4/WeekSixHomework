@@ -1,10 +1,12 @@
+
+
 var planes = ["fighter plane", "F-15", "F-16", "F-18", "C-17", "Cessna 172", "Top Gun", "Archer Piper", "P-51"];
 
 function displayPlanes(){
 
     $("#planeView").empty();
     var plane = $(this).attr("data-name");
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + plane + "&api_key=GTQOuJ3hdVfFGMgkMBosHnCu9sXvkqP6";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + plane + "&api_key=GTQOuJ3hdVfFGMgkMBosHnCu9sXvkqP6&limit=10";
 
     $.ajax({url: queryURL, method: 'GET'})
        .done(function(response) {
