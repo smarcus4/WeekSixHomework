@@ -1,0 +1,26 @@
+.btn{
+    margin-left: 10px;
+    margin-top: 10px;
+  
+}
+#planes-form{
+    text-align: center;
+
+}
+#addPlane:hover{
+    color: rgb(39, 177, 193);
+    transition-delay: ease .2s;
+    background-color: rgb(61, 105, 150);
+}
+
+#planeView{
+    text-align: center;
+}
+#buttons-view{
+    text-align: center;
+
+}
+html body{
+
+    margin-left: 100px;
+}
