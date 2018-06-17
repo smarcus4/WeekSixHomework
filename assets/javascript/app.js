@@ -4,7 +4,7 @@ function displayPlanes(){
 
     $("#planeView").empty();
     var plane = $(this).attr("data-name");
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + plane + "&api_key=GTQOuJ3hdVfFGMgkMBosHnCu9sXvkqP6";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + plane + "&api_key=GTQOuJ3hdVfFGMgkMBosHnCu9sXvkqP6";
 
     $.ajax({url: queryURL, method: 'GET'})
        .done(function(response) {
