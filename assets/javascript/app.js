@@ -1,4 +1,4 @@
-
+$( document ).ready(function() {
 
 var planes = ["fighter plane", "F-15", "F-16", "F-18", "C-17", "Cessna 172", "Top Gun", "Archer Piper", "P-51"];
 
@@ -108,4 +108,4 @@ function displayPlanes(){
       // This calls the renderButtons() function
       renderButtons();
       //displaycartoonInfo();
-    
+    });
