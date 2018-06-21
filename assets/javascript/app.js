@@ -66,7 +66,7 @@ function displayPlanes(){
     
         // Loops through the array of cartoons
         for (var i = 0; i < planes.length; i++){
-    
+        
           // Then dynamicaly generates buttons for each cartoon in the array
     
           // Note the jQUery syntax here... 

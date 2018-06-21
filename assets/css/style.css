@@ -15,12 +15,18 @@
 
 #planeView{
     text-align: center;
+     
 }
 #buttons-view{
     text-align: center;
+   
 
 }
 html body{
 
     margin-left: 100px;
+}
+
+img{
+    cursor: pointer;
 }
