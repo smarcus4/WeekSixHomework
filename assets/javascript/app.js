@@ -61,13 +61,10 @@ function displayPlanes(){
 
     function renderButtons(){ 
 
-        // Deletes the cartoons prior to adding new cartoons (this is necessary otherwise you will have repeat buttons)
         $('#buttons-view').empty();
     
-        // Loops through the array of cartoons
         for (var i = 0; i < planes.length; i++){
         
-          // Then dynamicaly generates buttons for each cartoon in the array
     
           // Note the jQUery syntax here... 
             var a = $('<button>') // This code $('<button>') is all jQuery needs to create the beginning and end tag. (<button></button>)
@@ -81,9 +78,7 @@ function displayPlanes(){
       }
       $('#addPlane').on('click', function(){
 
-        //clear container
-        //$('#cartoonsView').html("");     
-    
+       
         // This line of code will grab the input from the textbox
         var planeSearch = $('#plane-input').val().trim();
     
@@ -93,19 +88,17 @@ function displayPlanes(){
         // Our array then runs which handles the processing of our cartoon array
         renderButtons();
     
-        // We have this line so that users can hit "enter" instead of clicking on ht button and it won't move to the next page
         return false;
       })
     
-      // ========================================================
+    
     
       // Generic function for displaying the cartoonInfo
       $(document).on('click', '.plane', displayPlanes);
     
-    
-      // ========================================================
+
     
       // This calls the renderButtons() function
       renderButtons();
-      //displaycartoonInfo();
+      
     });
